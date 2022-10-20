@@ -1,0 +1,26 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap");
+
+$backgroundColor: $light;
+
+body {
+  background: $backgroundColor;
+  color: color-contrast($backgroundColor);
+  font-family: "Nunito", sans-serif;
+}
+
+.nav-link {
+  color: color-contrast($light);
+  transition: 500ms;
+  text-decoration: none;
+  &:hover {
+    transform: scale(1.2, 1.2);
+  }
+}
