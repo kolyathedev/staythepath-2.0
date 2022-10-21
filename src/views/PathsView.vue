@@ -35,7 +35,7 @@ export default {
   <div
     v-for="path in authStore.data"
     :key="path._id"
-    class="row justify-content-center mt-5"
+    class="row justify-content-center mt-5 bg-none"
   >
     <div class="col-8 align-self-center">
       <Path :name="path.pathName" :pathData="path" />

@@ -11,7 +11,8 @@
 $backgroundColor: $light;
 
 body {
-  background: $backgroundColor;
+  // Keep an eye out on how to fix the below bodge. Inherited a white bg from bootstrap otherwise.
+  background-color: rgba(128, 128, 0, 0);
   color: color-contrast($backgroundColor);
   font-family: "Nunito", sans-serif;
 }
@@ -23,4 +24,12 @@ body {
   &:hover {
     transform: scale(1.2, 1.2);
   }
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+  z-index: -1;
 }

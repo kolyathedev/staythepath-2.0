@@ -10,7 +10,7 @@
         >
       </li>
       <li class="nav-item">
-        <RouterLink class="nav-link" to="/journal">Register</RouterLink>
+        <RouterLink class="nav-link" to="/register">Register</RouterLink>
       </li>
       <li class="nav-item">
         <RouterLink class="nav-link" to="/about">About</RouterLink>
